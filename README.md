@@ -10,4 +10,6 @@ $ git submodule update --init
 $ cd ..
 $ git clone https://github.com/raspberrypi/pico-examples
 
-
+$ cd  $PICO_SDK_PATH/lib/tinyusb/examples/device/cdc_dual_ports
+$ mkdir build && cd build
+$ cmake .. && make -j4
